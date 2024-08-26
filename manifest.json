@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Open Salesforce Link",
+  "version": "1.0",
+  "description": "Automatically opens the associated Salesforce contact when viewing a prospect in Outreach.io.",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://web.outreach.io/prospects/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
